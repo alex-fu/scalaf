@@ -18,7 +18,6 @@ lazy val root = (project in file(".")).settings(
   initialCommands := s"""println("Hi, initialCommands")""",
 
   libraryDependencies ++= Seq(
-    "org.apache.derby"        % "derby"                 % "10.4.1.3",
     "org.scalaz"              %% "scalaz-core"          % scalazV,
     "com.typesafe.akka"       %% "akka-slf4j"           % akkaV,
     "com.typesafe.akka"       %% "akka-actor"           % akkaV,
@@ -29,7 +28,9 @@ lazy val root = (project in file(".")).settings(
     "com.typesafe.akka"       %% "akka-http-core"       % akkaV,
     "com.typesafe.akka"       %% "akka-http-spray-json-experimental"      % akkaV,
     "com.typesafe.akka"       %% "akka-http-experimental"                 % akkaV,
-    "com.trueaccord.scalapb"  %% "scalapb-runtime"      % "0.4.20"
+    "com.trueaccord.scalapb"  %% "scalapb-runtime"      % "0.5.31",
+    "org.scalactic" %% "scalactic" % "2.2.6",
+    "org.scalatest" %% "scalatest" % "2.2.6" % "test"
   )
 ).settings(buildResolvers: _*)
  .settings(PB.protobufSettings: _*)
