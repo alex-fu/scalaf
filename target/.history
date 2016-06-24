@@ -1,0 +1,122 @@
+show name
+show version
+show compile
+show run
+name
+inspect name
+quit
+exit
+compile
+reload
+compile
+reload
+show compile:dependencyClasspath
+show test:dependencyClasspath
+projects
+projectInfo
+show version
+project root
+project
+projects
+tasks
+tasks -v
+plugins
+reload
+plugins
+run
+compile
+clean
+compile
+run
+compile
+run
+tasks -v
+dependencyGraph
+exit
+tasks
+tasks -v
+assembly
+dependencyGraph
+dependencyTree
+dependencyOverrides
+dependencyC
+dependencyCacheDirectory
+dependencyClasspath
+tasks -V
+:q
+exit
+tasks -V
+exit
+quit
+exit
+tasks -v
+dependencyGraph
+quit
+exit
+assemblyPackageDependency
+assemblyPackageScala
+cd ../
+exit
+show update
+tasks
+tasks -v
+tasks -V
+exit
+tasks
+configuration
+configurations
+configurationsToRetrieve
+configuration
+compile:clean
+protobuf
+protobuf:protobufGenerate
+configuration
+configuration protobuf
+test:compile
+inspect compil
+inspect compile
+inspect run
+protobufGenerate
+inspect protobufGenerate
+tasks -v
+show tasks
+show tasks -v
+show compile
+evicted
+show run
+configuration
+protobuf
+configuration
+show configuration
+configurationsToRetrieve
+show configurationsToRetrieve
+inspect acture compile
+inspect actual compile
+inspect console
+inspect actual console
+inspect test
+Test:compile
+inspect runtime
+inspect test
+runtime:test
+compile:test
+test:test
+fullClasspath
+show fullClasspath
+show test:fullClasspath
+show compile:fullClasspath
+show *:fullClasspath
+inspect test:fullClasspath
+doc::fullClasspath
+compile:doc::configuration
+tasks -V
+inspect doc
+inspect console
+inspect console::initialCommands
+inspect test.console::initialCommands
+inspect initialCommands
+exit
+compile
+console
+run
+exit
