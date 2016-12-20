@@ -1,7 +1,8 @@
 import com.trueaccord.scalapb.{ ScalaPbPlugin => PB }
 
 val scalazV = "7.2.1"
-val akkaV = "2.4.7"
+val akkaV = "2.4.14"
+val akkaHttpV = "10.0.0"
 
 val buildResolvers = resolvers ++= Seq(
   Resolver.sonatypeRepo("public"),
@@ -12,7 +13,7 @@ val buildResolvers = resolvers ++= Seq(
 lazy val root = (project in file(".")).settings(
   organization := "com.github.fyfhust",
   name := "scalaf",
-  version := "1.0",
+  version := "1.0-SNAPSHOT",
   scalaVersion := "2.11.8",
 
   initialCommands := s"""println("Hi, initialCommands")""",
@@ -21,13 +22,9 @@ lazy val root = (project in file(".")).settings(
     "org.scalaz"              %% "scalaz-core"          % scalazV,
     "com.typesafe.akka"       %% "akka-slf4j"           % akkaV,
     "com.typesafe.akka"       %% "akka-actor"           % akkaV,
-    "com.typesafe.akka"       %% "akka-cluster"         % akkaV,
-    "com.typesafe.akka"       %% "akka-cluster-tools"   % akkaV,
-    "com.typesafe.akka"       %% "akka-cluster-metrics" % akkaV,
-    "com.typesafe.akka"       %% "akka-contrib"         % akkaV,
-    "com.typesafe.akka"       %% "akka-http-core"       % akkaV,
-    "com.typesafe.akka"       %% "akka-http-spray-json-experimental"      % akkaV,
-    "com.typesafe.akka"       %% "akka-http-experimental"                 % akkaV,
+    "com.typesafe.akka"       %% "akka-http-core"       % akkaHttpV,
+    "com.typesafe.akka"       %% "akka-http-spray-json" % akkaHttpV,
+    "com.typesafe.akka"       %% "akka-http"            % akkaHttpV,
     "com.trueaccord.scalapb"  %% "scalapb-runtime"      % "0.5.31",
     "org.scalactic" %% "scalactic" % "2.2.6",
     "org.scalatest" %% "scalatest" % "2.2.6" % "test"
